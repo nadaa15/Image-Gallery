@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+
+<body>
+
+    <div class="title">
+        <h1>Image Gallery</h1>
+    </div>
+    <div class="slider" id="slider">
+        <img src="assets/images/1.jpg" alt="" class="active">
+        <img src="assets/images/2.jpg" alt="">
+        <img src="assets/images/3.jpg" alt="">
+        <img src="assets/images/4.jpg" alt="">
+        <img src="assets/images/5.jpg" alt="">
+        <div class="buttons">
+            <button id="prev">&#10094; </button>
+            <button id="next">&#10095;</button>
+        </div>
+        <ul class="dots">
+            <li data-index="1" class="active"></li>
+            <li data-index="2"></li>
+            <li data-index="3"></li>
+            <li data-index="4"></li>
+            <li data-index="5"></li>
+        </ul>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

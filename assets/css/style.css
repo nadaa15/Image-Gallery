@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     font-family: "Sofadi One", system-ui;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #CDD8E5;
+}
+
+.slider {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    position: relative;
+}
+
+.title{
+    padding-block: 20px;
+}
+.title h1{
+    color: #112A46;
+}
+
+.slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+.slider .buttons {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider .buttons button {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider .buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.slider .buttons .disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.slider .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.slider .dots li.active {
+    width: 35px;
+    border-radius: 20px;
+    background-color: rgba(4, 4, 34, 0.9);
+}
+
+

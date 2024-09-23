@@ -1,0 +1,25 @@
+@media screen and (max-width: 960px) {
+    .slider {
+        width: 100%;
+    }
+
+    .title{
+    padding-top: 40px;
+}
+
+    .slider .buttons button {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .slider .dots li {
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+    }
+
+    .slider .dots li.active {
+        width: 20px;
+    }
+}
